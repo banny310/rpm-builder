@@ -16,7 +16,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 
 # Install PIP, PHP, and supplimentary programs.
 RUN apt-get install -y ${PHP_VERSION} ${PHP_VERSION}-dev ${PHP_VERSION}-bcmath ${PHP_VERSION}-bz2 \
-    ${PHP_VERSION}-cli ${PHP_VERSION}-curl ${PHP_VERSION}-intl ${PHP_VERSION}-json ${PHP_VERSION}-mbstring \
+    ${PHP_VERSION}-cli ${PHP_VERSION}-curl ${PHP_VERSION}-intl ${PHP_VERSION}-mbstring \
     ${PHP_VERSION}-opcache ${PHP_VERSION}-soap ${PHP_VERSION}-sqlite3 ${PHP_VERSION}-xml ${PHP_VERSION}-xsl \
     ${PHP_VERSION}-zip ${PHP_VERSION}-mysql ${PHP_VERSION}-pgsql ${PHP_VERSION}-mcrypt ${PHP_VERSION}-zip \
     php-amqp php-redis
